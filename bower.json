@@ -1,0 +1,24 @@
+{
+  "name": "ng-pluralize-html",
+  "description": "Module that extend ng-pluralize directive to support html",
+  "main": "src/ng-pluralize-html.js",
+  "authors": [
+    "christianesperar <christianesperar@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "ng-pluralize"
+  ],
+  "homepage": "https://github.com/christianesperar/ng-pluralize-html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.8"
+  }
+}

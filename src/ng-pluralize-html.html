@@ -1,0 +1,7 @@
+<span ng-bind-html="htmlPluralize | trustedHtml"></span>
+
+<!-- Execute ng-pluralize -->
+<span style="display: none">
+  <ng-pluralize ng-if="!offset" count="count" when="when"></ng-pluralize>
+  <ng-pluralize ng-if="offset" count="count" offset="offset" when="when"></ng-pluralize>
+</span>

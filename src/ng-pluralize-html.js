@@ -1,0 +1,58 @@
+'use strict';
+
+/**
+ * Module that extend ng-pluralize directive to support html
+ * It has exactly the same api functionality, just change the element to ng-pluralize-html
+ * API documentioan can be found here https://docs.angularjs.org/api/ng/directive/ngPluralize
+ */
+var ngPluralizeHtml = angular.module('ngPluralizeHtml', []);
+
+ngPluralizeHtml.directive('ngPluralizeHtml', ['$timeout', function($timeout) {
+  return {
+    restrict: 'AE',
+    templateUrl: 'ng-pluralize-html.html',
+    scope: {
+      count: '=',
+      offset: '=?',
+      when: '='
+    },
+    // Watch all the scope then get the generated string of ng-pluralize then
+    // parse it using ng-bind-html
+    link: function($scope, $elem, $attrs) {
+      // Get the raw text of ng-pluralize element
+      function getHtmlPluralizeText() {
+        $timeout(function() {
+          $scope.htmlPluralize = $elem.find('ng-pluralize').text();
+        }, 100);
+      }
+
+      // Assign all the parent scope to this scope
+      angular.forEach($scope.$parent, function(value, key) {
+        if (key.indexOf('$') === -1) {
+          $scope.$parent.$watch(key, function(val) {
+            $scope[key] = val;
+
+            getHtmlPluralizeText();
+          });
+        }
+      });
+
+      $scope.$watch('count', function(val) {
+        getHtmlPluralizeText();
+      });
+
+      $scope.$watch('offset', function(val) {
+        getHtmlPluralizeText();
+      });
+
+      $scope.$watch('when', function(val) {
+        getHtmlPluralizeText();
+      });
+    },
+  };
+}]);
+
+// Helper to successfully parse text to html
+ngPluralizeHtml.filter('trustedHtml', ['$sce', function($sce){
+  return $sce.trustAsHtml;
+}]);
