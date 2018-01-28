@@ -3,11 +3,13 @@ Module that extends ng-pluralize directive to support HTML
 
 It has exactly the same API functionality, just change **ng-pluralize** to **ng-pluralize-html**
 
+API documentation can be found [here](https://docs.angularjs.org/api/ng/directive/ngPluralize)
+
 ## Usage
 ### Install
     bower install --save
 ### Example
-API documentation can be found [here](https://docs.angularjs.org/api/ng/directive/ngPluralize)
+Click [here](https://rawgit.com/christianesperar/ng-pluralize-html/master/example/github.html) to see it in action
 
 #### JS
 ```javascript
