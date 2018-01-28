@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * Module that extend ng-pluralize directive to support html
- * It has exactly the same api functionality, just change the element to ng-pluralize-html
- * API documentioan can be found here https://docs.angularjs.org/api/ng/directive/ngPluralize
+ * Module that extends ng-pluralize directive to support HTML
+ * It has exactly the same API functionality, just change ng-pluralize to ng-pluralize-html
+ * API documentation can be found here: https://docs.angularjs.org/api/ng/directive/ngPluralize
  */
 var ngPluralizeHtml = angular.module('ngPluralizeHtml', []);
 

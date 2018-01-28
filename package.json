@@ -1,7 +1,7 @@
 {
   "name": "ng-pluralize-html",
   "version": "1.0.0",
-  "description": "Module that extend ng-pluralize directive to support html",
+  "description": "Module that extends ng-pluralize directive to support HTML",
   "main": "gulpfile.js",
   "directories": {
     "example": "example"

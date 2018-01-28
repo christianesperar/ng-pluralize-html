@@ -1,6 +1,6 @@
 {
   "name": "ng-pluralize-html",
-  "description": "Module that extend ng-pluralize directive to support html",
+  "description": "Module that extends ng-pluralize directive to support HTML",
   "main": "src/ng-pluralize-html.js",
   "authors": [
     "christianesperar <christianesperar@gmail.com>"
