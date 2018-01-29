@@ -7,7 +7,7 @@ API documentation can be found [here](https://docs.angularjs.org/api/ng/directiv
 
 ## Usage
 ### Install
-    bower install --save
+    bower install ng-pluralize-html --save
 ### Example
 Click [here](https://rawgit.com/christianesperar/ng-pluralize-html/master/example/github.html) to see it in action
 
