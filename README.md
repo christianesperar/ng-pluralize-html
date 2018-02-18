@@ -61,6 +61,3 @@ sampleApp.controller('NgPluralizeHtmlController', ['$scope', function NgPluraliz
   </div>
 </div>
 ```
-
-## Todo
-Add some test
