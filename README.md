@@ -1,4 +1,4 @@
-# ng-pluralize-html
+# ng-pluralize-html [![Build Status](https://travis-ci.org/christianesperar/ng-pluralize-html.svg?branch=master)](https://travis-ci.org/christianesperar/ng-pluralize-html)
 Module that extends ng-pluralize directive to support HTML
 
 It has exactly the same API functionality, just change **ng-pluralize** to **ng-pluralize-html**
