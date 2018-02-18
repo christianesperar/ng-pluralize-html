@@ -1,7 +1,10 @@
 language: node_js
 node_js:
   - 'node'
+sudo: required
 before_script:
   - npm install -g bower
   - bower install
   - gulp build
+  - 'sudo chown root /opt/google/chrome/chrome-sandbox'
+  - 'sudo chmod 4755 /opt/google/chrome/chrome-sandbox'
