@@ -1,15 +1,20 @@
 # ng-pluralize-html [![Build Status](https://travis-ci.org/christianesperar/ng-pluralize-html.svg?branch=master)](https://travis-ci.org/christianesperar/ng-pluralize-html)
-Module that extends ng-pluralize directive to support HTML
+A module that extends ng-pluralize directive to support HTML which is a missing feature and a required functionality to some developers based on [this](https://github.com/angular/angular.js/issues/4790) **open issue on AngularJs repository**.
 
-It has exactly the same API functionality, just change **ng-pluralize** to **ng-pluralize-html**
+It has exactly the same API functionality, just change **ng-pluralize** to **ng-pluralize-html**.
 
-API documentation can be found [here](https://docs.angularjs.org/api/ng/directive/ngPluralize)
+API documentation can be found [here](https://docs.angularjs.org/api/ng/directive/ngPluralize).
 
 ## Usage
 ### Install
+#### Bower
     bower install ng-pluralize-html --save
+#### Npm
+    npm install ng-pluralize-html --save
+#### Yarn
+    yarn add ng-pluralize-html --save
 ### Example
-Click [here](https://rawgit.com/christianesperar/ng-pluralize-html/master/example/github.html) to see it in action
+Click [here](https://rawgit.com/christianesperar/ng-pluralize-html/master/example/github.html) to see it in action.
 
 #### JS
 ```javascript
