@@ -9,9 +9,9 @@ API documentation can be found [here](https://docs.angularjs.org/api/ng/directiv
 ### Install
 #### Bower
     bower install ng-pluralize-html --save
-#### Npm
+#### npm
     npm install ng-pluralize-html --save
-#### Yarn
+#### yarn
     yarn add ng-pluralize-html --save
 ### Example
 Click [here](https://rawgit.com/christianesperar/ng-pluralize-html/master/example/github.html) to see it in action.
